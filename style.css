@@ -138,10 +138,11 @@ footer {
     padding: 2%;
     background-color: var(--bg-footer);
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1% 1% 96% ;
+    column-gap: 2%;
 }
 
-a img .rede-social {
+a {
     cursor: pointer;
 }
 
