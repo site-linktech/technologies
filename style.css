@@ -12,6 +12,7 @@
 }
 
 body, html {
+    scroll-behavior: smooth;
     height: 100%;
   }
 
@@ -47,7 +48,7 @@ h1 {
     transform: scale(1); /* Estado inicial do título */
 }
 50% {
-    transform: scale(0.99); /* Estado intermediário do título */
+    transform: scale(0.98); /* Estado intermediário do título */
 }
 100% {
     transform: scale(1); /* Estado final do título */
@@ -55,9 +56,9 @@ h1 {
 }
 
 .parallax {
-    background-image: url("img-bg-primario-3.jpg");
-    max-width: 1920px;
-    height: 68%;
+    background-image: url("tecnologia-e-sustentabilidade.png");
+    max-width: 100%;
+    height: 70%;
     align-items: center;
     background-attachment: fixed;
     background-position: center;
@@ -104,7 +105,7 @@ h1 {
     padding-left: 1.5%;
     display: grid;
     column-gap: 1%;
-    grid-template-columns: 33% 32% 33%;
+    grid-template-columns: 32% 32% 32%;
     grid-template-rows: auto auto auto;
 }
 
@@ -138,13 +139,32 @@ footer {
     padding: 2%;
     background-color: var(--bg-footer);
     display: grid;
-    grid-template-columns: 1% 1% 96% ;
-    column-gap: 2%;
+    grid-template-columns: 7% 1% 80%;
+    /* column-gap: 1%; */
 }
 
 a {
     cursor: pointer;
 }
+
+@media (max-width: 1280px) {
+    .down-prim-conteudo {
+        background-color: var(--bg-branco);
+        padding-top: 50px;
+        padding-bottom: 100px;
+        padding-left: 3%;
+        display: grid;
+        column-gap: 4%;
+        grid-template-columns: 46% 46% ;
+        grid-template-rows: auto auto auto;
+    }
+
+    .box-conteudo:last-child {
+        margin-top: 50px;
+    }
+}
+
+
 
 
   
