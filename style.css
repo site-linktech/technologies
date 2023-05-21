@@ -139,8 +139,12 @@ footer {
     padding: 2%;
     background-color: var(--bg-footer);
     display: grid;
-    grid-template-columns: 7% 1% 80%;
+    grid-template-columns: 80px auto auto;
     /* column-gap: 1%; */
+}
+
+.rede-social {
+    margin-left: 0px;
 }
 
 a {
@@ -161,6 +165,140 @@ a {
 
     .box-conteudo:last-child {
         margin-top: 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .down-prim-conteudo {
+        background-color: var(--bg-branco);
+        padding-top: 50px;
+        padding-bottom: 100px;
+        padding-left: 3%;
+        display: grid;
+        column-gap: 4%;
+        grid-template-columns: 46% 46% ;
+        grid-template-rows: auto auto auto;
+    }
+
+    .box-conteudo:last-child {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .down-prim-conteudo {
+        background-color: var(--bg-branco);
+        padding-top: 50px;
+        padding-bottom: 100px;
+        padding-left: 3%;
+        display: grid;
+        column-gap: 4%;
+        grid-template-columns: 46% 46% ;
+        grid-template-rows: auto auto auto;
+    }
+
+    .box-conteudo:last-child {
+        margin-top: 50px;
+    }
+
+    .parallax h1 {
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 10px;
+        font-size: 40px;
+        color: #ffffff;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 12px 24px;
+        margin-left: 43%;
+        align-items: center;
+        background-color: var(--bg-nav);
+        color: #000000;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+}
+
+@media (max-width: 425px) {
+    .down-prim-conteudo {
+        background-color: var(--bg-branco);
+        padding-top: 50px;
+        padding-bottom: 100px;
+        padding-left: 9%;
+        display: grid;
+        /* column-gap: 4%; */
+        grid-template-columns: 90% ;
+        grid-template-rows: auto auto auto;
+    }
+
+    .box-conteudo {
+        margin-top: 50px;
+    }
+
+    .rede-social {
+        margin-left: 10px;
+    }
+
+    footer {
+        padding: 4%;
+        background-color: var(--bg-footer);
+        display: grid;
+        grid-template-columns: 70px auto auto;
+        /* column-gap: 1%; */
+    }
+
+    .prim-conteudo {
+        background-image: url("img-bg-verde-2.jpg");
+        background-repeat: no-repeat;
+        max-width: 100%;
+        font-size: 12px;
+        padding: 9%;
+        display: flex;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .navbar {
+        background-color: var(--bg-nav);
+        color: #000000;
+        text-align: center;
+        padding: 3%;
+    }
+
+    .parallax h1 {
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 10px;
+        font-size: 40px;
+        color: #ffffff;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 12px 24px;
+        margin-left: 36%;
+        align-items: center;
+        background-color: var(--bg-nav);
+        color: #000000;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
     }
 }
 

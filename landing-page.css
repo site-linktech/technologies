@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-footer: #327e4c;
+    --bg-nav: #D9E4DD;
+    --bg-prim-conteudo: #327e4c;
+    --bg-branco: #e0e0e0;
+    --bg-box: #e0e0e0 ;
+}
+
+body {
+    position: fixed;
+}
+
+.navbar {
+    background-color: var(--bg-nav);
+    color: #000000;
+    text-align: center;
+    padding-left: 100%;
+}
